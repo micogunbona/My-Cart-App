@@ -17,7 +17,6 @@ addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(shoppingListInDB, inputValue)
     clearInputFieldEl()
-    addItemToShoppingListEl(inputValue)
 })
 
 onValue(shoppingListInDB, function(snapshot) {
