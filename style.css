@@ -33,7 +33,7 @@ input
  font-family: 'Rubik', sans-serif;
 }
 
-ul {
+div ul {
  list-style-type: none;
  padding: 0;
  display: flex;
@@ -41,7 +41,7 @@ ul {
  gap: 10px;
 }
 
-ul li {
+div ul li {
  font-size: 20px;
  background-color: #FFFDF8;
  padding: 15px;
