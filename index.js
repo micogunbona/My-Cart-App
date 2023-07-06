@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
     databaseURL: "https://realtime-database-1bbf0-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -21,7 +21,7 @@ addButtonEl.addEventListener("click", function() {
 
 onValue(shoppingListInDB, function(snapshot) {
     if (snapshot.exists()) {
-        let itemsArray = object.values(snapshot.val())
+        let itemsArray = Object.values(snapshot.val())
 
         clearShoppingListEl()
     
